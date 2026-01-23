@@ -1,0 +1,35 @@
+/* Style de base pour le header */
+header {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+header h1 {
+  letter-spacing: 0.1em;
+  line-height: 1;
+}
+
+header p {
+  letter-spacing: 0.05em;
+  color: #666;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+/* Navigation */
+.navbar {
+  border-top: 1px solid #e0e0e0;
+}
+
+.nav-link {
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #000;
+}
+
+/* Centrer le bouton hamburger sur mobile */
+.navbar-toggler {
+  border: 1px solid #ddd;
+}
