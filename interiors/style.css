@@ -1,35 +1,55 @@
 /* Style de base pour le header */
-header {
-  border-bottom: 1px solid #e0e0e0;
+
+.mx-10 {
+  margin-left: 10rem !important;
+  margin-right: 10rem !important;
 }
 
-header h1 {
+/* Slider Desktop uniquement */
+.carousel-img {
+  height: 550px;
+  object-fit: cover;
+}
+
+@media (min-width: 1200px) {
+  .carousel-img {
+    height: 650px;
+  }
+}
+
+/* Overlay en bas du slider */
+.carousel-caption-custom {
+  z-index: 20;
+  pointer-events: none;
+}
+
+/* Espacement des lettres pour le texte */
+.letter-spacing {
   letter-spacing: 0.1em;
-  line-height: 1;
 }
 
-header p {
-  letter-spacing: 0.05em;
-  color: #666;
-  line-height: 1;
-  white-space: nowrap;
+/* Images des collections - hauteur fixe et object-fit */
+.collection-img {
+  height: 150px;
+  object-fit: cover;
 }
 
-/* Navigation */
-.navbar {
-  border-top: 1px solid #e0e0e0;
+@media (min-width: 992px) {
+  .collection-img {
+    height: 400px;
+  }
 }
 
-.nav-link {
-  color: #333;
-  transition: color 0.3s ease;
+/* Ajustements pour les colonnes en desktop */
+@media (min-width: 992px) {
+  .order-lg-1 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
 }
 
-.nav-link:hover {
-  color: #000;
-}
-
-/* Centrer le bouton hamburger sur mobile */
-.navbar-toggler {
-  border: 1px solid #ddd;
+@media (min-width: 992px) {
+  .small-lg-normal {
+    font-size: 1rem !important;
+  }
 }

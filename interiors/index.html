@@ -1,96 +1,288 @@
 <!doctype html>
 <html lang="fr">
+
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link
-rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-crossorigin="anonymous"
-referrerpolicy="no-referrer"
-/>
-<link
-href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-rel="stylesheet"
-integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-crossorigin="anonymous"
-/>
-<link rel="stylesheet" href="style.css" />
-<title>Magazine en Ligne Interiors</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Magazine en Ligne Interiors</title>
 </head>
-<body>
+
+<body class="container-fluid px-0 px-md-2 px-lg-4 px-xl-5 bg-white">
+
+
   <!-- HEADER -->
- <!-- HEADER -->
-<header class="bg-white pt-3">
-  <div class="container-fluid">
-    <!-- Mobile : Titre empilé verticalement -->
-    <div class="row align-items-center d-lg-none">
-      <div class="col-12 text-center">
-        <p class="text-uppercase mb-0 small">Magazine En Ligne</p>
-        <h1 class="display-4 fw-light mb-0">INTERIORS</h1>
-        <p class="text-uppercase mb-0 small">Nos Meilleures Idées</p>
-      </div>
-    </div>
-
-    <!-- Desktop : Tout sur une ligne -->
-    <div class="d-none d-lg-flex justify-content-center align-items-center">
-      <p class="mb-0 me-3">Magazine En Ligne</p>
-      <h1 class="display-3 fw-light mb-0 mx-3">INTERIORS</h1>
-      <p class="mb-0 ms-3">Nos Meilleures Idées</p>
-    </div>
-  </div>
-
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 mt-5">
+  <header class="bg-white pt-3">
     <div class="container-fluid">
-      <!-- Bouton hamburger (visible seulement sur mobile) -->
-      <button 
-        class="navbar-toggler mx-auto" 
-        type="button" 
-        data-bs-toggle="collapse" 
-        data-bs-target="#navbarNav" 
-        aria-controls="navbarNav" 
-        aria-expanded="false" 
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      <!-- Mobile : Titre empilé verticalement -->
+      <div class="border-top border-ligh border-4"></div>
+      <div class="row align-items-center d-lg-none">
+        <div class="col-12 text-center">
+          <p class="text-uppercase mb-0 small">Magazine En Ligne</p>
+          <h1 class="display-4 fw-light mb-0">INTERIORS</h1>
+          <p class="text-uppercase mb-0 small">Nos Meilleures Idées</p>
+        </div>
+      </div>
 
-      <!-- Menu de navigation -->
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav mx-auto">
-          <li class="nav-item px-lg-3">
-            <a class="nav-link" href="#accueil">O1. Accueil</a>
-          </li>
-          <li class="nav-item px-lg-3">
-            <a class="nav-link" href="#apropos">O2. A propos</a>
-          </li>
-          <li class="nav-item px-lg-3">
-            <a class="nav-link" href="#services">O3. Services</a>
-          </li>
-          <li class="nav-item px-lg-3">
-            <a class="nav-link" href="#galerie">O4. Galerie</a>
-          </li>
-          <li class="nav-item px-lg-3">
-            <a class="nav-link" href="#news">O5. Les news</a>
-          </li>
-          <li class="nav-item px-lg-3">
-            <a class="nav-link" href="#contact">O6. Contact</a>
-          </li>
-        </ul>
+      <!-- Desktop : Tout sur une ligne -->
+      <div class="d-none d-lg-flex justify-content-center align-items-center my-3 lh-sm">
+        <p class="mb-0 me-3">Magazine En Ligne</p>
+        <h1 class="display-3 fw-light mb-0 mx-3">INTERIORS</h1>
+        <p class="mb-0 ms-3">Nos Meilleures Idées</p>
       </div>
     </div>
-  </nav>
-</header>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-2 my-3 border border-ligh border-4">
+      <div class="container-fluid">
+        <!-- Bouton hamburger (visible seulement sur mobile) -->
+        <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu de navigation -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item px-lg-3">
+              <a class="nav-link" href="#accueil">O1. Accueil</a>
+            </li>
+            <li class="nav-item px-lg-3">
+              <a class="nav-link" href="#apropos">O2. A propos</a>
+            </li>
+            <li class="nav-item px-lg-3">
+              <a class="nav-link" href="#services">O3. Services</a>
+            </li>
+            <li class="nav-item px-lg-3">
+              <a class="nav-link" href="#galerie">O4. Galerie</a>
+            </li>
+            <li class="nav-item px-lg-3">
+              <a class="nav-link" href="#news">O5. Les news</a>
+            </li>
+            <li class="nav-item px-lg-3">
+              <a class="nav-link" href="#contact">O6. Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 
 
 
-  <script
-src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-crossorigin="anonymous"
-></script>
+  <!-- HERO SLIDER - Desktop uniquement -->
+  <section id="accueil" class="position-relative d-none d-lg-block">
+    <div id="carouselHero" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/chambre-blanche.jpg" class="d-block w-100 carousel-img" alt="Interior 1">
+        </div>
+        <div class="carousel-item">
+          <img src="images/cuisine.jpg" class="d-block w-100 carousel-img" alt="Interior 2">
+        </div>
+        <div class="carousel-item">
+          <img src="images/salon.jpg" class="d-block w-100 carousel-img" alt="Interior 3">
+        </div>
+        <div class="carousel-item">
+          <img src="images/chambre-rose.jpg" class="d-block w-100 carousel-img" alt="Interior 4">
+        </div>
+        <div class="carousel-item">
+          <img src="images/chaises.jpg" class="d-block w-100 carousel-img" alt="Interior 5">
+        </div>
+      </div>
+    </div>
+
+    <!-- Overlay transparent avec texte en bas -->
+    <div class="position-absolute bottom-0 start-0 w-100 bg-dark bg-opacity-50 py-4 carousel-caption-custom">
+      <div class="container-fluid px-5">
+        <div class="text-center text-white">
+          <p class="mb-0 text-uppercase letter-spacing text-white">
+            <span class="fs-4 fw-light">POUR TROUVER</span>
+            <span class="display-3 fw-bold d-block d-md-inline">LES MEILLEURES</span>
+            <span class="fs-4 fw-light">SOLUTIONS...</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NOUVELLE COLLECTION -->
+  <section class="lg-my-2">
+    <div class="container-fluid">
+      <!-- Titre avec lignes -->
+      <div class="row align-items-center my-5">
+        <div class="col">
+          <div class="border-top border-ligh border-4"></div>
+        </div>
+        <div class="col-auto">
+          <h2 class="text-center text-uppercase mb-0 fs-6">NOUVELLE COLLECTION</h2>
+        </div>
+        <div class="col">
+          <div class="border-top border-ligh border-4"></div>
+        </div>
+      </div>
+
+      <!-- Cards -->
+      <div class="row g-3 g-lg-4">
+        <!-- Card Chambres -->
+        <div class="col-6 col-lg-3">
+          <div class="card h-100 border border-ligh border-4 rounded-0 bg-light">
+            <div class="card-text text-uppercase text-center py-3 border-bottom border-ligh border-4">CHAMBRES</div>
+            <img src="images/vignette-chambre.jpg" class="collection-img rounded-0 m-3" alt="Chambres">
+          </div>
+        </div>
+
+        <!-- Card Cuisines -->
+        <div class="col-6 col-lg-3">
+          <div class="card h-100 border border-ligh border-4 rounded-0 bg-light">
+            <div class="card-text text-uppercase text-center py-3 border-bottom border-ligh border-4">CUISINES</div>
+            <img src="images/vignette-cuisine.jpg" class="collection-img rounded-0 m-3" alt="Cuisines">
+          </div>
+        </div>
+
+        <!-- Card Salons -->
+        <div class="col-6 col-lg-3">
+          <div class="card h-100 border border-ligh border-4 rounded-0 bg-light">
+            <div class="card-text text-uppercase text-center py-3 border-bottom border-ligh border-4">SALONS</div>
+            <img src="images/vignette-fauteuil.jpg" class="collection-img rounded-0 m-3" alt="Salons">
+          </div>
+        </div>
+
+        <!-- Card Bains -->
+        <div class="col-6 col-lg-3">
+          <div class="card h-100 border border-ligh border-4 rounded-0 bg-light">
+            <div class="card-text text-uppercase text-center py-3 border-bottom border-ligh border-4">BAINS</div>
+            <img src="images/vignette-sallebain.jpg" class="collection-img rounded-0 m-3" alt="Bains">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DERNIERES NEWS -->
+  <section class="py-3 bg-white">
+    <div class="container-fluid">
+
+      <!-- Titre avec lignes -->
+      <div class="row align-items-center my-3">
+        <div class="col">
+          <div class="border-top border-ligh border-4"></div>
+        </div>
+        <div class="col-auto">
+          <h2 class="text-center text-uppercase mb-0 fs-6">Dernières News</h2>
+        </div>
+        <div class="col">
+          <div class="border-top border-ligh border-4"></div>
+        </div>
+      </div>
+
+      <!-- ROW qui englobe toutes les colonnes -->
+      <div class="row g-4 my-3">
+
+        <!-- COLONNE GAUCHE - Articles News empilés en desktop -->
+        <div class="col-12 col-lg-3 order-1">
+          <div class="row g-3">
+            <!-- Article 1 -->
+            <div class="col-6 col-lg-12">
+              <div class="card border border-ligh border-4 bg-light rounded-0 p-2 p-lg-4 h-100">
+                <h6 class="fw-bold mb-1 mb-lg-3 fs-6 fs-lg-5">21 OCTOBRE 2020</h6>
+                <p class="card-text mb-2 mb-lg-4 fs-6">Découvrez notre collection Lodge et ses différents éléments
+                  modulables et créez ainsi votre combinaison!.</p>
+                <button class="btn btn-light btn-sm rounded-0 mt-auto align-self-start">+ D'INFOS</button>
+              </div>
+            </div>
+
+            <!-- Article 2 -->
+            <div class="col-6 col-lg-12">
+              <div class="card border border-ligh border-4 bg-light rounded-0 p-2 p-lg-4 h-100">
+                <h6 class="fw-bold mb-1 mb-lg-3 fs-6 fs-lg-5">14 NOVEMBRE 2020</h6>
+                <p class="card-text mb-2 mb-lg-4 fs-6">Venez dès à présent découvrir dans notre magasin interiors,
+                  l'opération petits meubles enfants du 14 Novembre au 31 Décembre!.</p>
+                <button class="btn btn-light btn-sm rounded-0 mt-auto align-self-start">+ D'INFOS</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- COLONNE CENTRALE - Quelques mots sur notre société -->
+        <div class="col-6 col-lg-6 order-2">
+          <div class="h-100 mx-3">
+            <h3 class="h4 mb-5">Quelques mots sur notre société</h3>
+            <p class="mb-3">Découvrez notre sélection de meubles contemporains et de mobilier moderne et design pour
+              aménager votre intérieur. Plus de 10,000 objets deco et design en vente.</p>
+            <p class="mb-3">> Préparer vos cadeaux et vous faire plaisir avec des milliers de produits disponibles et
+              livrés chez vous en 24/48h !</p>
+            <p class="mb-5">> Noël 2021 est déjà là! Célébrez un Noël design avec notre sélection d'idées de cadeaux
+              originales et insolites. Découvrez notre sélection d'objets ludiques et insolites et faites le plein
+              d'idées !</p>
+            <button class="btn btn-light bg-transparent border-0">+ D'INFOS</button>
+          </div>
+        </div>
+
+        <!-- COLONNE DROITE - Catalogue et Références -->
+        <div class="col-6 col-lg-3 order-3">
+          <div class="h-100">
+            <!-- Réservez notre catalogue avec image de fond -->
+            <div class="catalogue-card position-relative mb-4">
+              <img src="images/fond-book.png" class="img-fluid w-100 rounded-0" alt="Catalogue">
+              <div class="position-absolute top-0 start-0 p-3">
+                <h5 class="text-uppercase fw-bold text-dark lh-lg p-2">RESERVEZ<br>NOTRE<br>CATALOGUE</h5>
+              </div>
+              <div class="position-absolute" style="bottom: 16%; left: 8%;">
+                <button class="btn btn-link text-white text-decoration-none">Cliquer ici</button>
+              </div>
+            </div>
+
+            <!-- Références -->
+            <div class="mt-4">
+              <h5 class="fw-bold mb-3">Références</h5>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-2">Expositions</li>
+                <li class="mb-2">Hôtels</li>
+                <li class="mb-2">Restaurants et Bars</li>
+                <li class="mb-2">Revente</li>
+                <li class="mb-2">Salons et Spas</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div> <!-- Fin du row principal -->
+    </div>
+  </section>
+
+  <!-- Footer avec réseaux sociaux et copyright -->
+  <footer class="py-4">
+    <div class="container-fluid">
+      <div class="border-top border-light border-4 mb-4"></div>
+      <div class="row">
+        <!-- Réseaux sociaux -->
+        <div class="col-12 col-lg-6 mb-3 mb-lg-0">
+          <div class="d-flex gap-3 justify-content-center justify-content-lg-start">
+            <a href="#" class="text-primary fs-1"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-primary fs-1"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="text-primary fs-1"><i class="fab fa-pinterest"></i></a>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="col-12 col-lg-6 text-center text-lg-end">
+          <p class="mb-0">© GBS - INTERIORS 2023</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+    </script>
 </body>
+
 </html>
