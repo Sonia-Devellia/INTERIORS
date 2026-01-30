@@ -4,7 +4,6 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
@@ -52,22 +51,22 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav mx-auto">
             <li class="nav-item px-lg-3">
-              <a class="nav-link" href="#accueil">O1. Accueil</a>
+              <a class="nav-link" href="#accueil">01. Accueil</a>
             </li>
             <li class="nav-item px-lg-3">
-              <a class="nav-link" href="#apropos">O2. A propos</a>
+              <a class="nav-link" href="#apropos">02. A propos</a>
             </li>
             <li class="nav-item px-lg-3">
-              <a class="nav-link" href="#services">O3. Services</a>
+              <a class="nav-link" href="#services">03. Services</a>
             </li>
             <li class="nav-item px-lg-3">
-              <a class="nav-link" href="#galerie">O4. Galerie</a>
+              <a class="nav-link" href="#galerie">04. Galerie</a>
             </li>
             <li class="nav-item px-lg-3">
-              <a class="nav-link" href="#news">O5. Les news</a>
+              <a class="nav-link" href="#news">05. Les news</a>
             </li>
             <li class="nav-item px-lg-3">
-              <a class="nav-link" href="#contact">O6. Contact</a>
+              <a class="nav-link" href="#contact">06. Contact</a>
             </li>
           </ul>
         </div>
@@ -187,29 +186,47 @@
       <div class="row g-4 my-3">
 
         <!-- COLONNE GAUCHE - Articles News empilés en desktop -->
-        <div class="col-12 col-lg-3 order-1">
+        <div class="col-12 col-lg-3 order-1" id="article">
           <div class="row g-3">
             <!-- Article 1 -->
-            <div class="col-6 col-lg-12">
-              <div class="card border border-ligh border-4 bg-light rounded-0 p-2 p-lg-4 h-100">
-                <h6 class="fw-bold mb-1 mb-lg-3 fs-6 fs-lg-5">21 OCTOBRE 2020</h6>
-                <p class="card-text mb-2 mb-lg-4 fs-6">Découvrez notre collection Lodge et ses différents éléments
-                  modulables et créez ainsi votre combinaison!.</p>
-                <button class="btn btn-light btn-sm rounded-0 mt-auto align-self-start">+ D'INFOS</button>
-              </div>
-            </div>
+<div class="col-6 col-lg-12">
+  <div class="card article-card border border-ligh border-4 bg-light rounded-0 p-2 p-lg-4 h-100">
+    <h6 class="fw-bold mb-1 mb-lg-3 fs-6 fs-lg-5">21 OCTOBRE 2020</h6>
+    <p class="card-text mb-2 mb-lg-4 fs-6">Découvrez notre collection Lodge et ses différents éléments
+      modulables et créez ainsi votre combinaison!.</p>
+    <button class="btn btn-light btn-sm rounded-0 mt-auto align-self-end">+ D'INFOS</button>
+  </div>
+</div>
 
-            <!-- Article 2 -->
-            <div class="col-6 col-lg-12">
-              <div class="card border border-ligh border-4 bg-light rounded-0 p-2 p-lg-4 h-100">
-                <h6 class="fw-bold mb-1 mb-lg-3 fs-6 fs-lg-5">14 NOVEMBRE 2020</h6>
-                <p class="card-text mb-2 mb-lg-4 fs-6">Venez dès à présent découvrir dans notre magasin interiors,
-                  l'opération petits meubles enfants du 14 Novembre au 31 Décembre!.</p>
-                <button class="btn btn-light btn-sm rounded-0 mt-auto align-self-start">+ D'INFOS</button>
-              </div>
-            </div>
+<!-- Article 2 -->
+<div class="col-6 col-lg-12">
+  <div class="card article-card border border-ligh border-4 bg-light rounded-0 p-2 p-lg-4 h-100">
+    <h6 class="fw-bold mb-1 mb-lg-3 fs-6 fs-lg-5">14 NOVEMBRE 2020</h6>
+    <p class="card-text mb-2 mb-lg-4 fs-6">Venez dès à présent découvrir dans notre magasin interiors,
+      l'opération petits meubles enfants du 14 Novembre au 31 Décembre!.</p>
+    <button class="btn btn-light btn-sm rounded-0 mt-auto align-self-end">+ D'INFOS</button>
+  </div>
+</div>
           </div>
         </div>
+
+         <!-- Modal pour afficher l'article complet -->
+    <div class="modal fade" id="articleModal" tabindex="-1" aria-labelledby="articleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-lg">
+            <div class="modal-content rounded-0 border-4">
+                <div class="modal-header bg-light border-bottom border-2">
+                    <h5 class="modal-title fw-bold" id="articleModalLabel">Article</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4" id="modalArticleContent">
+                    <!-- Le contenu sera inséré par JavaScript -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary rounded-0" data-bs-dismiss="modal">Fermer</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
         <!-- COLONNE CENTRALE - Quelques mots sur notre société -->
         <div class="col-6 col-lg-6 order-2">
@@ -236,9 +253,65 @@
                 <h5 class="text-uppercase fw-bold text-dark lh-lg p-2">RESERVEZ<br>NOTRE<br>CATALOGUE</h5>
               </div>
               <div class="position-absolute" style="bottom: 16%; left: 8%;">
-                <button class="btn btn-link text-white text-decoration-none">Cliquer ici</button>
+                <button class="btn btn-link text-white text-decoration-none"
+                 data-bs-toggle="modal" 
+                 data-bs-target="#catalogueModal"
+                  >Cliquer ici</button>
               </div>
             </div>
+
+            <!-- Modal Bootstrap -->
+    <div class="modal fade" id="catalogueModal" tabindex="-1" aria-labelledby="catalogueModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <!-- En-tête du modal -->
+                <div class="modal-header">
+                    <h5 class="modal-title" id="catalogueModalLabel">Réserver son catalogue</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+<!-- Corps du modal -->
+                <div class="modal-body">
+                    
+                    <!-- Formulaire -->
+                    <form id="catalogueForm">
+                        <div class="mb-3">
+                            <label for="emailInput" class="form-label">Adresse Email</label>
+                            <input type="email" 
+                                   class="form-control" 
+                                   id="emailInput" 
+                                   placeholder="Votre email"
+                                   required>
+                            <div class="invalid-feedback">
+                                Veuillez entrer une adresse email valide.
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" 
+                                   class="form-check-input" 
+                                   id="acceptCheckbox"
+                                   required>
+                            <label class="form-check-label" for="acceptCheckbox">
+                                J'accepte de recevoir le catalogue
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-success" id="submitBtn">OK</button>
+                        <!-- Message de succès -->
+                    <div class="alert alert-success d-none" role="alert" id="successAlert">
+                        <i class="bi bi-check-circle-fill"></i>
+                        Votre demande a été envoyée avec succès !
+                    </div>
+                    </form>
+                </div>
+                
+                <!-- Pied du modal -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fermer</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
             <!-- Références -->
             <div class="mt-4">
@@ -279,10 +352,9 @@
       </div>
     </div>
   </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
-    </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<script src="scripts.js"></script>
 </body>
 
 </html>

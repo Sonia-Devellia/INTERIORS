@@ -1,5 +1,26 @@
 /* Style de base pour le header */
 
+@font-face {
+    font-family: 'Antipasto';
+    src: url('fonts/Antipasto-Pro-Regular-trial.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Antipasto', sans-serif;
+}
+.numerique {
+    font-family: 'Segoe UI', sans-serif;
+}
+
+
+
+
+.numerique {
+  font-family: 'Segoe UI', sans-serif; 
+}
+
 .mx-10 {
   margin-left: 10rem !important;
   margin-right: 10rem !important;
