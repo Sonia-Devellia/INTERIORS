@@ -2,9 +2,16 @@
 
 @font-face {
     font-family: 'Antipasto';
-    src: url('fonts/Antipasto-Pro-Regular-trial.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+    font-size: 14px;
+    font-weight: 400;
+    src: url(fonts/Antipasto-pro-regular-trial-webfont.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'SegoeUI';
+    font-size: 14px;
+    font-weight: 400;
+    src: url(fonts/segoe_ui-webfont.woff2) format('woff2');
 }
 
 body {
@@ -12,13 +19,6 @@ body {
 }
 .numerique {
     font-family: 'Segoe UI', sans-serif;
-}
-
-
-
-
-.numerique {
-  font-family: 'Segoe UI', sans-serif; 
 }
 
 .mx-10 {
