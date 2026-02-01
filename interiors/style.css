@@ -2,15 +2,11 @@
 
 @font-face {
     font-family: 'Antipasto';
-    font-size: 14px;
-    font-weight: 400;
     src: url(fonts/Antipasto-pro-regular-trial-webfont.woff2) format('woff2');
 }
 
 @font-face {
     font-family: 'SegoeUI';
-    font-size: 14px;
-    font-weight: 400;
     src: url(fonts/segoe_ui-webfont.woff2) format('woff2');
 }
 
