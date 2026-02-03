@@ -1,4 +1,3 @@
-/* Style de base pour le header */
 
 @font-face {
     font-family: 'Antipasto';
@@ -10,11 +9,21 @@
     src: url(fonts/segoe_ui-webfont.woff2) format('woff2');
 }
 
-body {
+h1,h2,h3,h4,h5,h6{
     font-family: 'Antipasto', sans-serif;
 }
-.numerique {
-    font-family: 'Segoe UI', sans-serif;
+
+.numeric {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .mx-10 {
