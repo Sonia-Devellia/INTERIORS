@@ -79,3 +79,17 @@ p {
     font-size: 1rem !important;
   }
 }
+
+/* Bouton cliquez ici  */
+.btn-catalogue-container {
+  bottom: 12%;
+  left: 7%;
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+  .btn-catalogue-container {
+    bottom: 15%;
+    left: 12%;
+  }
+}

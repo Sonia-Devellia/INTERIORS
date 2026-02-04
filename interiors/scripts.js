@@ -171,7 +171,7 @@ function afficherArticleComplet(article) {
     let html = '<div class="container-fluid px-3 px-lg-4">';
     
     // En-tête de l'article (date)
-    html += '<header class="bg-light border border-ligh border-4 rounded-0 p-3 mb-4">';
+    html += '<header class="bg-light border border-4 rounded-0 p-3 mb-4">';
     html += '<h6 class="fw-bold mb-0"><span class="numeric">' + dateFormatee + '</span></h6>';
     html += '</header>';
     
@@ -186,7 +186,7 @@ function afficherArticleComplet(article) {
         html += '<figure class="mb-4">';
         html += '<img src="' + article.picture + '" class="img-fluid rounded-0" alt="' + article.title + '">';
         html += '</figure>';
-        html += '<hr class="border-top border-ligh border-4 mb-4">';
+        html += '<hr class="border-top border-4 mb-4">';
     }
     
     // Contenu de l'article
@@ -197,7 +197,7 @@ function afficherArticleComplet(article) {
     html += '</section>';
     
     // Fin d'article
-    html += '<hr class="border-top border-ligh border-4 mt-4">';
+    html += '<hr class="border-top border-4 mt-4">';
     html += '</div>';
     
     // Affiche le contenu

@@ -21,7 +21,7 @@
   <header class="bg-white pt-3">
     <div class="container-fluid">
       <!-- Mobile : Titre empilé verticalement -->
-      <div class="border-top border-ligh border-4"></div>
+      <div class="border-top border-4"></div>
       <div class="row align-items-center d-lg-none">
         <div class="col-12 text-center">
           <p class="text-uppercase mb-0 small">Magazine En Ligne</p>
@@ -213,9 +213,9 @@
       <!-- Modal pour afficher l'article complet -->
       <div class="modal fade" id="articleModal" tabindex="-1" aria-labelledby="articleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable modal-lg">
-          <div class="modal-content rounded-0 border border-ligh border-4">
+          <div class="modal-content rounded-0 border border-4">
             
-            <header class="modal-header bg-light border-bottom border-ligh border-4">
+            <header class="modal-header bg-light border-bottom border-4">
               <h5 class="modal-title fw-bold text-uppercase" id="articleModalLabel">Article</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </header>
@@ -224,7 +224,7 @@
               <!-- Le contenu sera inséré par JavaScript -->
             </article>
             
-            <footer class="modal-footer bg-light border-top border-ligh border-4">
+            <footer class="modal-footer bg-light border-top border-4">
               <button type="button" class="btn btn-secondary rounded-0" data-bs-dismiss="modal">Fermer</button>
             </footer>
             
@@ -235,7 +235,7 @@
         <!-- COLONNE CENTRALE - Quelques mots sur notre société -->
         <div class="col-6 col-lg-6 order-2">
           <div class="h-100 mx-3">
-            <h3 class="h4 my-5">Quelques mots sur notre société</h3>
+            <h3 class="h4 my-5 fw-bold">Quelques mots sur notre société</h3>
             <p class="mb-3">Découvrez notre sélection de meubles contemporains et de mobilier moderne et design pour
               aménager votre intérieur. Plus de <span class="numeric">10,000</span> objets deco et design en vente.</p>
             <p class="mb-3">> Préparer vos cadeaux et vous faire plaisir avec des milliers de produits disponibles et
@@ -261,14 +261,14 @@
         </h5>
       </div>
       
-      <!-- Bouton (desktop inchangé avec style inline, mobile ajusté) -->
-      <div class="position-absolute" style="bottom: 16%; left: 8%;">
-        <button class="btn btn-link text-white text-decoration-none fs-6 fs-lg-auto"
-                data-bs-toggle="modal" 
-                data-bs-target="#catalogueModal">
-          Cliquer <br class="d-lg-none"> ici
-        </button>
-      </div>
+      <!-- Bouton -->
+    <div class="position-absolute btn-catalogue-container">
+  <button class="btn btn-link text-white text-decoration-none fs-6 fs-md-5 fs-lg-4 fw-bold text-center p-0 lh-sm"
+          data-bs-toggle="modal" 
+          data-bs-target="#catalogueModal">
+    Cliquer<br>ici
+  </button>
+</div>
     </div>
 <!-- Modal Bootstrap -->
 <div class="modal fade" id="catalogueModal" tabindex="-1" aria-labelledby="catalogueModalLabel" aria-hidden="true">
